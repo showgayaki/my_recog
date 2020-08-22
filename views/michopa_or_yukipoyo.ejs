@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Michopa or Yukipoyo</title>
+   <link rel="stylesheet" href="<%= myUrl%>/static/css/bootstrap.min.css">
+   <link rel="stylesheet" href="<%= myUrl%>/static/css/style.css">
+   <link rel="icon" href="<%= myUrl%>/static/images/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Michopa or Yukipoyo</h1>
+            <p>みちょぱとゆきぽよを判定するAIアプリ</p>
+        </header>
+        <div class="main">
+            <div id="image-form">
+                <form id="form" action="/" method="post" enctype="multipart/form-data">
+                    <div id="drop-area" class="drop-area">
+                        <label id="drop-area-label" class="drop-area-label" for="select-file">
+                            <p>ここにファイルをドロップ</p>
+                            <p>または</p>
+                            <p class="btn btn-outline-primary">ファイルを選択</p>
+                        </label>
+                        <input type="file" id="select-file" class="select-file" name="select-file">
+                    </div>
+                </form>
+            </div>
+            <div id="result-area" class="fade-in">
+                <div id="upload">
+                    <img id="upload-image" src="" alt="upload image">
+                </div>
+                <div id="faces">
+                </div>
+            </div>
+            <div id="loader" class="loader">
+                <div class="loader-inner line-scale">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <p>計算中…</p>
+                </div>
+            </div>
+        </div><!-- main -->
+        <footer class="fixed-bottom">
+            <small><span>&copy;</span> 2020 watashi</small>
+        </footer>
+    </div><!-- container -->
+    <script type="text/javascript" src="<%= myUrl%>/static/js/<%= jsFile%>"></script>
+</body>
+</html>

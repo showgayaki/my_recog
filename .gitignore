@@ -1,0 +1,5 @@
+node_modules/
+face_recog/venv/
+face_recog/pyvenv.cfg
+__pycache__/
+face_recog/requirements.txt
