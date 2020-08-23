@@ -261,7 +261,7 @@ footer span{
 }
 .loader-inner{
     color: #d87093;
-    margin: 35vh 0 0 0;
+    margin: 300px 0 0 0;
 }
 .loader p{
     color: #d87093;
@@ -306,8 +306,14 @@ footer span{
     .predict-result{
         font-size: 20px;
     }
+    .loader-inner{
+        margin: 300px 0 0 0;
+    }
 }
 @media screen and (max-width:480px){
+    header{
+        height: 110px;
+    }
     header p{
         font-size: 15px;
     }
@@ -331,5 +337,8 @@ footer span{
     }
     .predict-result{
         font-size: 17px;
+    }
+    .loader-inner{
+        margin: 250px 0 0 0;
     }
 }
